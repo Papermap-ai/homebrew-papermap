@@ -5,21 +5,21 @@
 class Papermap < Formula
   desc "Terminal-native client for Papermap insights"
   homepage "https://github.com/Papermap-ai/papermap-tui"
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Papermap-ai/papermap-tui/releases/download/v0.8.0/papermap_0.8.0_darwin_x86_64.tar.gz"
-      sha256 "e0224dfd8926de42d2219803d1ae992bcbef72251c0eba7b5397ca78d2d14d31"
+      url "https://github.com/Papermap-ai/papermap-tui/releases/download/v0.8.1/papermap_0.8.1_darwin_x86_64.tar.gz"
+      sha256 "c6e971e1d166a11e29c7928694326a1eef7f12c8e69f8caa77963669917de0c1"
 
       define_method(:install) do
         bin.install "papermap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Papermap-ai/papermap-tui/releases/download/v0.8.0/papermap_0.8.0_darwin_arm64.tar.gz"
-      sha256 "abd16db427f69673f9632a99441dab595be36d6502ba9d5186713ab4e909f7ba"
+      url "https://github.com/Papermap-ai/papermap-tui/releases/download/v0.8.1/papermap_0.8.1_darwin_arm64.tar.gz"
+      sha256 "b1c75f072655099c977c0c234eb6cf6b0857860423c5910b275a37460ac1ef10"
 
       define_method(:install) do
         bin.install "papermap"
@@ -29,15 +29,15 @@ class Papermap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Papermap-ai/papermap-tui/releases/download/v0.8.0/papermap_0.8.0_linux_x86_64.tar.gz"
-      sha256 "fd2c79df73e2de16130295edf6aff56e61eb2c5ecf0cc588db1c53bba39f3472"
+      url "https://github.com/Papermap-ai/papermap-tui/releases/download/v0.8.1/papermap_0.8.1_linux_x86_64.tar.gz"
+      sha256 "3165e1987b5b8eb826f2a3905b23b8d64b6554891c1465607cfd0e4be10bee2c"
       define_method(:install) do
         bin.install "papermap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Papermap-ai/papermap-tui/releases/download/v0.8.0/papermap_0.8.0_linux_arm64.tar.gz"
-      sha256 "eb9b07f130c9cdc38afd4935577d5980ad6ea305e72f02da22ee91782c960072"
+      url "https://github.com/Papermap-ai/papermap-tui/releases/download/v0.8.1/papermap_0.8.1_linux_arm64.tar.gz"
+      sha256 "4b6c4e6a6f1f270590189c316baf247a2cac6c1f02e9e825fb32a7bfe5a12a25"
       define_method(:install) do
         bin.install "papermap"
       end
